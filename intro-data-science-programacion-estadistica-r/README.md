@@ -161,6 +161,7 @@ substr("abcdef", 2, 4)
 substring("abcdef", 1:6, 1:6)
 ```
 > strsplit is more efficient.
+
 **conocer la longitud de una cadena**
 ```
 substring(texto, 7, 11) <- "Swirl"
@@ -194,7 +195,7 @@ Otra función que trabaja con expresiones regulares es regexpr()
 regexpr(patron, musicos)
 ```
 
-> puedes ver cómo las utiliza R usando ?regexpr.
+**puedes ver cómo las utiliza R usando ?regexpr**.
 ```
 grep(pattern, x, ignore.case = FALSE, perl = FALSE, value = FALSE,
      fixed = FALSE, useBytes = FALSE, invert = FALSE)
