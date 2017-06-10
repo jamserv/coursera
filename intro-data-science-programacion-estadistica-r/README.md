@@ -6,16 +6,18 @@ donde : MARGIN = 1(row) - 2(column).
 apply(X=mi_matriz, MARGIN = 1, FUN = min)
 
 **consultar los argumentos de la funcion lapply**.
-
+```
 args(lapply)
 
 mayusculas <- lapply(mi_lista, toupper)
 
 View(asa_datos)
+```
 
 **conocer el tipo de datos cargados en el data-frame**.
+```
 lapply(asa_datos, class)
-
+```
 A la hora de trabajar con factores es importante que conozcas los niveles que los datos pueden tomar
 
 **mira los datos en una columna (description)**
@@ -41,8 +43,9 @@ tapply(asa_datos$Pasajeros.nacionales, asa_datos$Codigo.IATA, mean)
 
 **Comienza viendo las columnas Sepal.Length y Petal.Length.** 
 Otra vez especifica un color por especie.
-
+```
 plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species)
+```
 
 **Un parámetro importante es el símbolo que se usa para graficar puntos; éstos se cambian usando el parámetro pch.** 
 Este parámetro puede recibir valores de dos maneras. 
