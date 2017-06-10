@@ -23,3 +23,4 @@ qplot(color, data=diamonds)
 
 Leer [Diagrama de dispersión](https://es.wikipedia.org/wiki/Diagrama_de_dispersi%C3%B3n)
 
+![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/Rplot.png)
