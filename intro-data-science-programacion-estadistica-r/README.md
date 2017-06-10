@@ -111,3 +111,8 @@ Si deseas regresar a la paleta de colores por defecto debes de ingresar:
 ```
 palette("default")
 ```
+
+## Creación de Gráficas en 3D.
+
+> This lesson requires the ‘rgl’ package.
+
