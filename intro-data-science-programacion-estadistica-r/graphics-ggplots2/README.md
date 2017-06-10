@@ -21,4 +21,5 @@ qplot(color, data=diamonds)
 ```
 **Grafica de dispersion**
 
-LEER [Diagrama de dispersión](https://es.wikipedia.org/wiki/Diagrama_de_dispersi%C3%B3n)
+Leer [Diagrama de dispersión](https://es.wikipedia.org/wiki/Diagrama_de_dispersi%C3%B3n)
+
