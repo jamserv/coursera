@@ -154,3 +154,66 @@ plot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, type="s", col=as.
 ```
 plot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, type="s", col=as.integer(iris$Species), radius=1.5)
 ```
+
+## Expresiones regulares.
+```
+substr("abcdef", 2, 4)
+substring("abcdef", 1:6, 1:6)
+```
+> strsplit is more efficient.
+**conocer la longitud de una cadena**
+```
+substring(texto, 7, 11) <- "Swirl"
+nchar(texto)
+```
+**Cadenas formateadas**.
+```
+sprintf("El cuadrado de %d es %d", i, i^2)
+```
+**sustituir caracteres en cadenas**.
+```
+chartr("o", "a", "¡Hola Mundo!")
+```
+
+**Las expresiones regulares o patrones no son más que una especie de comodín o un atajo para referirse a una gran cantidad de cadenas**.
+```
+patron <- "H(a|ä|ae)ndel"
+musicos <- c("Handel","Mendel","Haendel","Händel","Handemore","handel")
+grep(patron, musicos)
+```
+> Esta función toma como argumentos primero un patrón y como segundo argumento un vector de cadenas
+
+Si deseas construir un patrón que además incluya las cadenas "Mendel" y "handel"
+```
+nuevo_patron <- ".(a|ä|ae|e)ndel"
+grep(nuevo_patron, musicos)
+```
+
+Otra función que trabaja con expresiones regulares es regexpr()
+```
+regexpr(patron, musicos)
+```
+
+> puedes ver cómo las utiliza R usando ?regexpr.
+```
+grep(pattern, x, ignore.case = FALSE, perl = FALSE, value = FALSE,
+     fixed = FALSE, useBytes = FALSE, invert = FALSE)
+
+grepl(pattern, x, ignore.case = FALSE, perl = FALSE,
+      fixed = FALSE, useBytes = FALSE)
+
+sub(pattern, replacement, x, ignore.case = FALSE, perl = FALSE,
+    fixed = FALSE, useBytes = FALSE)
+
+gsub(pattern, replacement, x, ignore.case = FALSE, perl = FALSE,
+     fixed = FALSE, useBytes = FALSE)
+
+regexpr(pattern, text, ignore.case = FALSE, perl = FALSE,
+        fixed = FALSE, useBytes = FALSE)
+
+gregexpr(pattern, text, ignore.case = FALSE, perl = FALSE,
+         fixed = FALSE, useBytes = FALSE)
+
+regexec(pattern, text, ignore.case = FALSE,
+        fixed = FALSE, useBytes = FALSE)
+```
