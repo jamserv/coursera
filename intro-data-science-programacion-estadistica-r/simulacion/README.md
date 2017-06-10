@@ -1,10 +1,11 @@
 ## Simulación.
 
-```
-mi_matriz <- matrix(data = 1:16, nrow = 4, ncol = 4)
-```
+Usualmente cada distribución tendrá 4 funciones de la forma prefijo + apodo_distribucion. Cada prefijo indica: 
 
-Usualmente cada distribución tendrá 4 funciones de la forma prefijo + apodo_distribucion. Cada prefijo indica: r - la función para generar números aleatorios, p - la función de distribución, d - la función de densidad, q - la función que te da cuantiles.
+* r - la función para generar números aleatorios
+* p - la función de distribución
+* d - la función de densidad
+* q - la función que te da cuantiles.
 
 > Para obtener una lista completa de las distribuciones disponibles en R, ingresa:
 
