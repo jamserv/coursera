@@ -10,7 +10,9 @@ En esta práctica trabajarás con el conjunto de datos diamonds del paquete ggpl
 data("diamonds")
 view(diamonds)
 ```
-> carat representa el peso del diamante, cut representa la calidad del corte (Fair, Good, Very Good, Premium, Ideal), color representa el color del diamante, 
-desde J (el peor) a D (el mejor), clarity es una medida de qué tan claro es el diamante (I1 (el peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (el mejor)).
+* carat representa el peso del diamante
+* cut representa la calidad del corte (Fair, Good, Very Good, Premium, Ideal)
+* color representa el color del diamante, desde J (el peor) a D (el mejor)
+* clarity es una medida de qué tan claro es el diamante (I1 (el peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (el mejor)).
 
 
