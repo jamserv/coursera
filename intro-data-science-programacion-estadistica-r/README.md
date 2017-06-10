@@ -29,7 +29,7 @@ asa_datos$Descripcion
 Una manera de poder ver todos los niveles aun cuando sean muchos es usando la función unique(). La función unique() elimina duplicados. Ingresa
 unique(asa_datos$Descripcion) en la línea de comandos.
 
-**saber el número total de pasajeros nacionales que viajaron en alguno de los aeropuertos pertenecientes a la red ASA**
+**Total de pasajeros nacionales que viajaron en alguno de los aeropuertos pertenecientes a la red ASA**
 ```
 sum(asa_datos$Pasajeros.nacionales)
 
@@ -51,14 +51,30 @@ Otra vez especifica un color por especie.
 ```
 plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species)
 ```
+## Parámetros en el Sistema de Gráficos
 
 **Un parámetro importante es el símbolo que se usa para graficar puntos; éstos se cambian usando el parámetro pch.** 
-> Este parámetro puede recibir valores de dos maneras. 
+Este parámetro puede recibir valores de dos maneras. 
 
 ```
 par(pch=15)
 plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species, pch="A")
 ```
+> Los códigos numéricos que puedes usar son los números del 0 al 25.
+```
+plot(1:26, pch=0:25) 
+```
 
+En particular a los símbolos del 21 al 25 les puedes cambiar el color de la orilla y el de relleno. Esto se hace usando los parámetros col y bg
+```
+plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species, pch = 21, bg = "blue")
+```
+También puedes cambiar el tamaño de los símbolos usando el argumento cex
+```
+plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species, cex = 2)
+```
 
-
+**La función legend() puede ser usada para añadir leyendas a las gráficas**.
+```
+legend(x = 4.5, y = 7, legend = levels(iris$Species), col = c(1:3), pch = 16)
+```
