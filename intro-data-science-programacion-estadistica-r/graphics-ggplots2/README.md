@@ -33,3 +33,10 @@ Existe cierta correlación para ser exponencial y hay ciertos lugares donde pare
 qplot(log(carat), log(price), data = diamonds)
 ```
 ![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/2.png)
+
+En ggplot2() puedes mapear alguna categoría que tenga una variable a un atributo estético, en este caso el atributo color de qplot(); por ejemplo, si utilizas diamonds puedes mapear la columna color que te indica el color del diamante a un color distinto en la gráfica. Ingresa qplot(carat, price, data=diamonds, color=color) en la línea de comandos.
+```
+qplot(carat, price, data = diamonds, color = color)
+```
+![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/3.png)
+
