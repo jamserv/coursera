@@ -64,3 +64,30 @@ qplot(carat, price, data = diamonds, alpha = I(1/100))
 qplot(carat, price, data = diamonds, size = table)
 ```
 ![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/7.png)
+
+El atributo **facets** te permite crear una tabla donde puedes subdividir en grupos. Si quisieras ver cómo se comporta la variable carat contra la variable price y le pides que te haga el **faceting** por color, entonces por cada color de diamante te va graficando el carat contra el price (peso vs precio).
+
+```
+qplot(carat, price, data = diamonds, facets = color ~ .)
+```
+![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/8.png)
+
+El atributo **geom** de qplot() especifica el tipo de objeto que utilizará para graficar. El valor por defecto es "point" (punto); esto sólo si ’x’ y ‘y’ se encuentran especificados. Si sólo x se encuentra especificado el valor es "histogram" (histograma).
+```
+qplot(carat, price, data = diamonds, geom = c("point", "smooth"))
+```
+![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/9.png)
+
+Un posible valor para **geom** es "smooth", el cual ajusta una curva a los puntos que estas especificando, además de que te dibuja el error estándar de esa curva.
+
+**jitter**,  permite analizar en cajas cómo se están dispersando los puntos, dependiendo de las variables que quieras observar.
+```
+qplot(color, price/carat, data = diamonds, geom = "jitter")
+```
+![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/10.png)
+
+Si usas **geom="boxplot"** te graficará una gráfica de caja, donde puedes observar la distribución de tus datos por la categoría que quieras observar.
+```
+qplot(color, price/carat, data = diamonds, geom = "boxplot")
+```
+![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/11.png)
