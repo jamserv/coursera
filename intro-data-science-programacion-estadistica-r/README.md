@@ -78,3 +78,12 @@ plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species, cex = 2)
 ```
 legend(x = 4.5, y = 7, legend = levels(iris$Species), col = c(1:3), pch = 16)
 ```
+
+## Colores en el Sistema de Graficos.
+
+En R puedes especificar colores de tres maneras: como una cadena, usando los componentes RGB (rojo, verde, azul) o haciendo referencia a un índice de la paleta de colores mediante un entero.
+
+> Para obtener la lista de los nombres de colores válidos, usa la función:
+```
+colors()
+```
