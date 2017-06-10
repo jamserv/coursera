@@ -1,18 +1,19 @@
 mi_matriz <- matrix(data = 1:16, nrow = 4, ncol = 4)
 
-**aplicar apply a mi_matriz**
-donde : MARGIN = 1(row) - 2(column). <br>
+**aplicar apply a mi_matriz**.
+
+donde : MARGIN = 1(row) - 2(column).
 apply(X=mi_matriz, MARGIN = 1, FUN = min)
 
-** consultar los argumentos de la funcion lapply **
-args(lapply)
+**consultar los argumentos de la funcion lapply**.
 
+args(lapply)
 
 mayusculas <- lapply(mi_lista, toupper)
 
 View(asa_datos)
 
-**conocer el tipo de datos cargados en el data-frame**
+**conocer el tipo de datos cargados en el data-frame**.
 lapply(asa_datos, class)
 
 A la hora de trabajar con factores es importante que conozcas los niveles que los datos pueden tomar
