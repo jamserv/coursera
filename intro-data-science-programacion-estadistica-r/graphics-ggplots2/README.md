@@ -15,4 +15,10 @@ view(diamonds)
 * color representa el color del diamante, desde J (el peor) a D (el mejor)
 * clarity es una medida de qué tan claro es el diamante (I1 (el peor), SI1, SI2, VS1, VS2, VVS1, VVS2, IF (el mejor)).
 
+**Crear un histograma de los colores**
+```
+qplot(color, data=diamonds)
+```
+**Grafica de dispersion**
 
+LEER [Diagrama de dispersión](https://es.wikipedia.org/wiki/Diagrama_de_dispersi%C3%B3n)
