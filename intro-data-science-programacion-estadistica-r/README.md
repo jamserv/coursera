@@ -19,7 +19,7 @@ View(asa_datos)
 ```
 lapply(asa_datos, class)
 ```
-A la hora de trabajar con factores es importante que conozcas los niveles que los datos pueden tomar
+> A la hora de trabajar con factores es importante que conozcas los niveles que los datos pueden tomar
 
 **mira los datos en una columna (description)**
 ```
@@ -53,7 +53,7 @@ plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species)
 ```
 
 **Un parámetro importante es el símbolo que se usa para graficar puntos; éstos se cambian usando el parámetro pch.** 
-Este parámetro puede recibir valores de dos maneras. 
+> Este parámetro puede recibir valores de dos maneras. 
 
 ```
 par(pch=15)
