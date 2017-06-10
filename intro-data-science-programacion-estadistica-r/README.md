@@ -34,10 +34,18 @@ table(asa_datos$Estado)
 
 tapply(asa_datos$Pasajeros.nacionales, asa_datos$Estado, sum)
 
-## Ahora obtén el promedio o media de pasajeros nacionales que viajaron por mes en cada aeropuerto. Recuerda que para calcular la media puedes usar la función mean().
+## Ahora obtén el promedio o media de pasajeros nacionales que viajaron por mes en cada aeropuerto.
 
 tapply(asa_datos$Pasajeros.nacionales, asa_datos$Codigo.IATA, mean)
 
-## Comienza viendo las columnas Sepal.Length y Petal.Length. Otra vez especifica un color por especie. Ingresa plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species) en la línea de comandos.
+## Comienza viendo las columnas Sepal.Length y Petal.Length. Otra vez especifica un color por especie.
 
 plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species)
+
+## Un parámetro importante es el símbolo que se usa para graficar puntos; éstos se cambian usando el parámetro pch. Este parámetro puede recibir valores de dos maneras.
+
+* par(pch=15)
+* plot(iris$Sepal.Length, iris$Petal.Length, col = iris$Species, pch="A")
+
+
+
