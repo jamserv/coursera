@@ -22,5 +22,14 @@ qplot(color, data=diamonds)
 **Grafica de dispersion**
 
 Leer [Diagrama de dispersión](https://es.wikipedia.org/wiki/Diagrama_de_dispersi%C3%B3n)
+```
+qplot(carat, price, data=diamonds)
+```
 
 ![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/Rplot.png)
+
+Existe cierta correlación para ser exponencial y hay ciertos lugares donde parecen hacerse estrías. Esto puedes tratar de compensarlo haciendo una transformación de las variables; es decir, en lugar de usar los valores lineales, podrías aplicar una transformación logarítmica y entonces estarías graficando los valores logarítmicos contra los valores logarítmicos de  'x' y 'y'
+```
+qplot(log(carat), log(price), data = diamonds)
+```
+![Image of Yaktocat](https://github.com/jamserv/coursera/blob/master/intro-data-science-programacion-estadistica-r/graphics-ggplots2/img/2.png)
