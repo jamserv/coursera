@@ -90,3 +90,23 @@ En R puedes especificar colores de tres maneras:
 ```
 colors()
 ```
+Para buscar todos los colores que contengan la subcadena "yellow" ingresa:
+```
+grep("yellow", colors(), value=TRUE)
+```
+
+Si requieres un número más grande de colores para graficar, necesitarás acceder a una paleta más grande.
+Algunos ejemplos de estas funciones son **rainbow(), heat.colors(), topo.colors(), y terrain.colors()**.
+```
+* paleta_arcoiris <- rainbow(10)
+* palette(paleta_arcoiris)
+* plot(1:10, col=1:10, main="Paleta Arcoiris", pch=17, cex=3)
+```
+Paraespecificar los colores que quieras puedes crear un vector que contenga dichos colores. Por ejemplo, crea el vector:
+```
+mi_paleta <- c("red", "green", "#0019FFFF")
+```
+Si deseas regresar a la paleta de colores por defecto debes de ingresar:
+```
+palette("default")
+```
