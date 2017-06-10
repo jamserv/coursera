@@ -4,13 +4,15 @@
 cd /home/janez/cousera/data-science/data-scientists-tools/week-2
 pwd
 ```
-**/home/janez/cousera/data-science/data-scientists-tools/week-2**
+**/home/janez/cousera/data-science/data-scientists-tools/week-2**.
+
 and go to back folder typed.
 ```
 cd ..
 pwd
 ```
-**/home/janez/cousera/data-science/data-scientists-tools/**
+**/home/janez/cousera/data-science/data-scientists-tools/**.
+
 **Make a folder**.
 ``` sh
 mkdir week-2
