@@ -114,5 +114,43 @@ palette("default")
 
 ## Creación de Gráficas en 3D.
 
-> This lesson requires the ‘rgl’ package.
+rgl es un paquete de gráficos 3D que produce gráficas interactivas en 3D en tiempo real. Permite rotar de forma interactiva, ampliar los gráficos, etc. Ingresa ?rgl en la línea de comandos para conocer un poco más del paquete rgl.
 
+> Es necesario instalar la libreria rgl en mi caso uso ubuntu.
+```
+sudo apt-get install r-cran-rgl
+```
+Cargando el dataset iris y asignandole valores a "x", "y" & "z"
+```
+data("iris")
+x <- iris$Sepal.Length
+y <- iris$Petal.Length
+z <- iris$Sepal.Width
+```
+Para inicializar la interfaz 3D usa la función open3d()
+```
+open3d()
+```
+Ahora puedes utilizar la función plot3d(); ésta funciona de manera similar a la función plot() del sistema base de R:
+```
+plot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width)
+```
+
+Al igual que con plot() puedes especificar el tipo de gráfica usando el parámetro type
+```
+plot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, type="s")
+```
+> Los tipos soportados son 'p' para puntos, 's' para esferas, 'l' para líneas, 'h' para segmentos de línea con z = 0, y 'n' para nada.
+Asimismo, puedes especificar el color usado para graficar a los elementos usando el parámetro col
+```
+plot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, type="s", col=rainbow(150))
+```
+
+**graficar elemento por especie**
+```
+plot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, type="s", col=as.integer(iris$Species))
+```
+**cambiar el tamaño del elemento graficado**
+```
+plot3d(iris$Sepal.Length, iris$Petal.Length, iris$Sepal.Width, type="s", col=as.integer(iris$Species), radius=1.5)
+```
