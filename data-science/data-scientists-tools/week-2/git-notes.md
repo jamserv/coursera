@@ -1,5 +1,7 @@
 ## Git - repository
 
+## Creating a Github Repository.
+
 [Correct link syntax](http://www.example.com/)
 
 **Configure username and email**.
@@ -20,5 +22,10 @@ git ini
 ```
 **add on remote repository**
 ```
-git remote add origin http://github.com/coursera/data-science/data-scientistic-tools.git
+git remote add origin http://github.com/jamserv/data-scientistic-tools.git
+```
+
+**Clone repository**
+```
+git clone <<URL>>
 ```
