@@ -1,6 +1,4 @@
-## Git - repository
-
-## Creating a Github Repository.
+## Git - Creating a Github Repository.
 
 [Correct link syntax](http://www.example.com/)
 
