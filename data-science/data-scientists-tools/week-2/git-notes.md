@@ -43,3 +43,8 @@ git clone <<URL>>
 ```
 git commit -m "add message description here"
 ```
+
+**Pushing**.
+
+* ```git push```
+* ```git push origin <<remote_branch>>```
