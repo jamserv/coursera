@@ -78,3 +78,15 @@
 * the second most important is the data
 * Ofthen the data will limit or enable the question
 * But having data can't save you if you don't have a question
+***************************
+
+### Experimental Design
+
+* Good experiments
+	* Have replication
+	* measure variability
+	* Generalize to the problem you care about
+	* are transparent
+* Prediction is not inference
+	* Both can be important
+* Beware data dredging
