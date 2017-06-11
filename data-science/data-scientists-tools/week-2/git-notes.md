@@ -35,5 +35,5 @@ git clone <<URL>>
 **Adding**
 
 * ```git add .```		- add all new files
-* git add -u 	- update traking for files that changue name or were deleted
-* git add -A 	- does both of the previous.
+* ```git add -u``` 		- update traking for files that changue name or were deleted
+* ```git add -A``` 		- does both of the previous.
