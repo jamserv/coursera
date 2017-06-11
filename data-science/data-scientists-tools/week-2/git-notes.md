@@ -27,3 +27,6 @@ git remote add origin http://github.com/jamserv/data-scientistic-tools.git
 ```
 git clone <<URL>>
 ```
+
+## Git - Basic Git Commands.
+
