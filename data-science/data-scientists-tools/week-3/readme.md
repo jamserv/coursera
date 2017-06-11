@@ -62,7 +62,7 @@
 
 ## Whats is Data?
 
-"Data are values of qualitative or quatitative variables, belonging to a **set of items**"
+"Data are values of **qualitative** or **quatitative** **variables**, belonging to a **set of items**"
 
 **Set of items:** Sometimes called the population, the set of the objects you are interesed.
 
