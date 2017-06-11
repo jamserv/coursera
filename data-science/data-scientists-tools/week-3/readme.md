@@ -7,7 +7,7 @@
 * Causal
 * Mechanistic
 
-#### Descriptive
+### Descriptive
 
 Goals: Describe a set of data
 * the first kind of data analytics of performed
