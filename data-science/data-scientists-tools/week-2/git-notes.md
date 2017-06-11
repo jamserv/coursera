@@ -13,3 +13,12 @@ git config --list
 ```
 cd ~
 ```
+
+**Initialize a local git repository**
+```
+git ini
+```
+**add on remote repository**
+```
+git remote add origin http://github.com/coursera/data-science/data-scientistic-tools.git
+```
