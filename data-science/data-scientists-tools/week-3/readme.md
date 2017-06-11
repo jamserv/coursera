@@ -62,4 +62,19 @@
 
 ## Whats is Data?
 
-"Data are values of qualitative or quatitative variables, belonging to a set of items"
+"Data are values of qualitative or quatitative variables, belonging to a **set of items**"
+
+**Set of items:** Sometimes called the population, the set of the objects you are interesed.
+
+**Variables:**A measurements of characteristic of a items.
+
+**Qualitative:** Country of origin, sex, treatment
+
+**Quantitative:** Height, weight, blood presure
+
+### The data is the second most important thing
+
+* The most important thing in data science is the question
+* the second most important is the data
+* Ofthen the data will limit or enable the question
+* But having data can't save you if you don't have a question
