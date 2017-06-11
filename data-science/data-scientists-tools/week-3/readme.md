@@ -62,3 +62,4 @@
 
 ## Whats is Data?
 
+"Data are values of qualitative or quatitative variables, belonging to a set of items"
