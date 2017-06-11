@@ -58,3 +58,7 @@
 * Usually modeled by a deterministic set of equations(phisicals / engeneering / science)
 * Generally the random component of the data is measuriment error
 * If the equations are known but the parameters are not, they may inrefed with data analysis
+***************************
+
+## Whats is Data?
+
