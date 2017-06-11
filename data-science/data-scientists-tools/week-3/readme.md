@@ -66,7 +66,7 @@
 
 **Set of items:** Sometimes called the population, the set of the objects you are interesed.
 
-**Variables:**A measurements of characteristic of a items.
+**Variables:** A measurements of characteristic of a items.
 
 **Qualitative:** Country of origin, sex, treatment
 
