@@ -30,3 +30,4 @@ git clone <<URL>>
 
 ## Git - Basic Git Commands.
 
+![Image of Yaktocat](https://www.stephenmarron.com/wp-content/uploads/2017/02/git.png)
