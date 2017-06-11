@@ -48,3 +48,20 @@ git commit -m "add message description here"
 
 * ```git push```
 * ```git push origin <<remote_branch>>```
+
+**Branches**.
+
+Create a branch.
+```
+git checkout -b janez
+```
+
+See what branch.
+```
+git branch
+```
+
+Switch into branches. (janez to master)
+```
+git checkout master
+```
