@@ -31,3 +31,9 @@ git clone <<URL>>
 ## Git - Basic Git Commands.
 
 ![Image of Yaktocat](https://www.stephenmarron.com/wp-content/uploads/2017/02/git.png)
+
+**Adding**
+
+* git add .		- add all new files
+* git add -u 	- update traking for files that changue name or were deleted
+* git add -A 	- does both of the previous.
