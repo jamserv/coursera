@@ -5,7 +5,3 @@ View current directory use:
 ```
 getWD()
 ```
-
-ok
-
-asas
