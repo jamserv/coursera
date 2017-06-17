@@ -5,3 +5,5 @@ View current directory use:
 ```
 getWD()
 ```
+
+***"C:/Users/janez/Documents"***
