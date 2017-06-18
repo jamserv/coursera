@@ -4,8 +4,9 @@
 > Johns Hopkins University
 
 **2. The definition of free software consists of four freedoms (freedoms 0 through 3). Which of the following is NOT one of the freedoms that are part of the definition? Select all that apply.**
-*The freedom to prevent users from using the software for undesirable purposes.
-*The freedom to sell the software for any price.
+
+* The freedom to prevent users from using the software for undesirable purposes.
+* The freedom to sell the software for any price.
 
 **3. In R the following are all atomic data types EXCEPT: (Select all that apply)**
 *matrix 
