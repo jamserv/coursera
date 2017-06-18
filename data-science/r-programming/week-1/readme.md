@@ -27,7 +27,7 @@
 **11. Use the Week 1 Quiz Data Set to answer questions 11-20. In the dataset provided for this Quiz, what are the column names of the dataset?**
 > Ozone, Solar.R, Wind, Temp, Month, Day
 
-12. Extract the first 2 rows of the data frame and print them to the console. What does the output look like?**
+**12. Extract the first 2 rows of the data frame and print them to the console. What does the output look like?**
 ```
 my_data[1:2,]
 
