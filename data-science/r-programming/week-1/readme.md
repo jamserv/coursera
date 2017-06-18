@@ -41,3 +41,18 @@ my_data[1:2,]
 nrow(my_data)
 ```
 > 153
+
+**14. Extract the last 2 rows of the data frame and print them to the console. What does the output look like?**
+
+```
+> my_data[c(nrow(my_data)-1, nrow(my_data)),]
+    Ozone Solar.R Wind Temp Month Day
+152    18     131  8.0   76     9  29
+153    20     223 11.5   68     9  30
+```
+
+**15. What is the value of Ozone in the 47th row?**
+```
+> my_data[47, c("Ozone")]
+[1] 21
+```
