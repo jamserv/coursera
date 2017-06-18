@@ -76,5 +76,5 @@ nrow(my_data)
 [1] 212.8
 ```
 
-**19. asdas
+**19. What is the mean of "Temp" when "Month" is equal to 6?**
 
