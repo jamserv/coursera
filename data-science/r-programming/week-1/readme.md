@@ -9,7 +9,12 @@
 * The freedom to sell the software for any price.
 
 **3. In R the following are all atomic data types EXCEPT: (Select all that apply)**
-*matrix 
+
+* matrix 
+* data frame
+* table
+* array
+* list
 
 **4. If I execute the expression x <- 4L in R, what is the class of the object 'x' as determined by the 'class()' function?**
 >numeric
