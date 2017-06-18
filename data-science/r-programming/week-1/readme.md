@@ -56,3 +56,25 @@ nrow(my_data)
 > my_data[47, c("Ozone")]
 [1] 21
 ```
+
+**16. How many missing values are in the Ozone column of this data frame?**
+```
+> sum(is.na(my_data$Ozone))
+[1] 37
+```
+
+**17. What is the mean of the Ozone column in this dataset? Exclude missing values (coded as NA) from this calculation.**
+```
+> mean(my_data$Ozone[!is.na(my_data$Ozone)])
+[1] 42.12931
+```
+
+**18. Extract the subset of rows of the data frame where Ozone values are above 31 and Temp values are above 90. What is the mean of Solar.R in this subset?**
+```
+> good <- complete.cases(my_data$Ozone, my_data$Solar.R, my_data$Temp)
+> mean(my_data$Solar.R[good & my_data$Ozone > 31 & my_data$Temp > 90])
+**[1] 212.8**
+```
+
+**19. 
+
