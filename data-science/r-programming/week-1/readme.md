@@ -18,4 +18,6 @@
 > **a character vector containing the letter "a".**
 
 **9. Suppose I have a vector x <- 1:4 and a vector y <- 2. What is produced by the expression x + y?**
-> 
+> a numeric vector with elements 3, 4, 5, 6.
+
+**10. Suppose I have a vector x <- c(3, 5, 1, 10, 12, 6) and I want to set all elements of this vector that are less than 6 to be equal to zero. What R code achieves this? Select all that apply.**
