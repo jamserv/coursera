@@ -13,4 +13,8 @@
 > elements of a vector all must be of the same class
 
 **8. Suppose I have a list defined as x <- list(2, "a", "b", TRUE). What does x[[2]] give me? Select all that apply.**
->
+> a list containing character vector with the letter "a".
+> **a character vector containing the letter "a".**
+
+**9. Suppose I have a vector x <- 1:4 and a vector y <- 2. What is produced by the expression x + y?**
+> 
