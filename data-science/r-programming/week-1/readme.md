@@ -10,3 +10,7 @@
 >a matrix with two rows and three columns
 
 **7. A key property of vectors in R is that**
+> elements of a vector all must be of the same class
+
+**8. Suppose I have a list defined as x <- list(2, "a", "b", TRUE). What does x[[2]] give me? Select all that apply.**
+>
