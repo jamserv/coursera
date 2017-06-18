@@ -35,3 +35,9 @@ my_data[1:2,]
 1    41     190  7.4   67     5   1
 2    36     118  8.0   72     5   2
 ```
+
+**13. How many observations (i.e. rows) are in this data frame?**
+```
+nrow(my_data)
+```
+> 153
