@@ -73,8 +73,8 @@ nrow(my_data)
 ```
 > good <- complete.cases(my_data$Ozone, my_data$Solar.R, my_data$Temp)
 > mean(my_data$Solar.R[good & my_data$Ozone > 31 & my_data$Temp > 90])
-**[1] 212.8**
 ```
+**[1] 212.8**
 
 **19. 
 
