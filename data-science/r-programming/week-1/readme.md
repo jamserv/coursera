@@ -1,5 +1,15 @@
 ## Quiz Week-1
 
+**1. R was developed by statisticians working at**
+> Johns Hopkins University
+
+**2. The definition of free software consists of four freedoms (freedoms 0 through 3). Which of the following is NOT one of the freedoms that are part of the definition? Select all that apply.**
+*The freedom to prevent users from using the software for undesirable purposes.
+*The freedom to sell the software for any price.
+
+**3. In R the following are all atomic data types EXCEPT: (Select all that apply)**
+*matrix 
+
 **4. If I execute the expression x <- 4L in R, what is the class of the object 'x' as determined by the 'class()' function?**
 >numeric
 
@@ -77,4 +87,14 @@ nrow(my_data)
 ```
 
 **19. What is the mean of "Temp" when "Month" is equal to 6?**
+```
+> mean(my_data$Temp[my_data$Month == 6])
+[1] 79.1
+```
+
+**20. What was the maximum ozone value in the month of May (i.e. Month is equal to 5)?**
+```
+> max(my_data$Ozone[my_data$Month == 5 & !is.na(my_data$Ozone)])
+[1] 115
+```
 
