@@ -8,4 +8,4 @@ getWD()
 
 ***"C:/Users/janez/Documents"***
 
-> this directory you can change.
+> 	this directory you can change.
