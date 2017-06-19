@@ -65,4 +65,4 @@ Which symbol in the above function is a free variable?
 **f**
 
 **6. What is an environment in R?**
-* a collection of symbol/value pairs**
+* a collection of symbol/value pairs
