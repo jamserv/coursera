@@ -7,7 +7,7 @@ cube <- function(x, n) {
 }
 cube(3)
 ```
-**27**
+**The number 27 is returned**
 
 **2. The following code will produce a warning in R.**
 ```
