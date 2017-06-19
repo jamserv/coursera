@@ -42,6 +42,7 @@ y <- if(x < 3) {
 }
 ```
 What is the value of 'y' after evaluating this expression?
+
 **10**
 
 **5. Consider the following R function**
