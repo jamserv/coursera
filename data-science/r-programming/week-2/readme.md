@@ -66,3 +66,19 @@ Which symbol in the above function is a free variable?
 
 **6. What is an environment in R?**
 * a collection of symbol/value pairs
+
+**7. The R language uses what type of scoping rule for resolving free variables?**
+
+* lexical scoping
+
+**8. How are free variables in R functions resolved?**
+
+* The values of free variables are searched for in the environment in which the function was defined
+
+**9. What is one of the consequences of the scoping rules used in R?**
+
+* All objects must be stored in memory
+
+**10. In R, what is the parent frame?**
+
+* It is the environment in which a function was called
