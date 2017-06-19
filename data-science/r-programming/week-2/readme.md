@@ -61,6 +61,7 @@ h <- function(x, y = NULL, d = 3L) {
 }
 ```
 Which symbol in the above function is a free variable?
+
 **f**
 
 **6. What is an environment in R?**
