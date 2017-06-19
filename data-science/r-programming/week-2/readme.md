@@ -17,3 +17,17 @@ if(x > 5) {
 }
 ```
 * 'x' is a vector of length 10 and 'if' can only test a single logical statement. 
+
+**3. Consider the following function**
+```
+f <- function(x) {
+        g <- function(y) {
+                y + z
+        }
+        z <- 4
+        x + g(x)
+}
+z <- 10
+f(3)
+```
+**10**
