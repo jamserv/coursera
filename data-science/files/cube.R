@@ -17,3 +17,27 @@ f <- function(x) {
         z <- 4
         x + g(x)
 }
+
+posible <- function() {
+        x <- 5
+        y <- if(x < 3) {
+                NA
+        } else {
+                10
+        }
+}
+
+creer <- function() {
+        h <- function(x, y = NULL, d = 3L) {
+                z <- cbind(x, d)
+                if(!is.null(y))
+                        z <- z + y
+                else
+                        z <- z + f
+                g <- x + y / z
+                if(d == 3L)
+                        return(g)
+                g <- g + 10
+                g
+        }
+}
