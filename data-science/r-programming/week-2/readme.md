@@ -5,11 +5,9 @@
 cube <- function(x, n) {
         x^3
 }
-
 cube(3)
-
-27
 ```
+**27**
 
 **2. The following code will produce a warning in R.**
 ```
