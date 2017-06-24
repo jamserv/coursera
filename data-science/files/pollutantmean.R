@@ -1,19 +1,22 @@
 pollutantmean <- function(directory, pollutant, id = 1:323) {
-        ##Directory : location of load *.csv file.
-        loadData <- read.csv(directory)
-        temp = list.files(pattern="*.csv")
-        for (i in 1:length(temp)) {
-                ##assign(temp[i], read.csv(temp[i]))
+        ## 'directory' is a character vector of length 1 indicating the location of
+        ## the CSV files
+        
+        ## 'pollutant' is a character vector of length 1 indicating the name of the
+        ## pollutant for which we will calculate the mean; either 'sulfate' or
+        ## 'nitrate'.
+        
+        ## 'id' is an integer vector indicating the monitor ID numbers to be used
+        
+        ## Return the mean of the pollutant across all monitors list in the 'id'
+        ## vector (ignoring NA values)
+        data = numeric()
+        for (i in id) {
                 
-                print(temp[i])
-                if(pollutant == 'nitrate') {
-                        result <- mean(loadData$nitrate[!is.na(loadData$nitrate)][id])
-                } else if(pollutant == 'sulfate') {
-                        result <- mean(loadData$sulfate[!is.na(loadData$sulfate)][id])
-                } else {
-                        warning('option not available. Try again')
-                        result <- 0
-                }
+                newRead = read.csv(paste(directory, "/", formatC(i, width = 3, flag = "0"), 
+                                         ".csv", sep = ""))
+                
+                data = c(data, newRead[[pollutant]])
         }
-        result
+        return(mean(data, na.rm = TRUE))
 }
