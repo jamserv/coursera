@@ -1,5 +1,10 @@
 ## Quiz Week-3
 
+**1.**
+```
+round(mean(iris[which(iris$Species == "virginica"),]$Sepal.Length))
+```
+
 **2.**
 ```
 apply(iris[, 1:4], 2, mean)
