@@ -17,13 +17,33 @@ github_token <- oauth2.0_token(oauth_endpoints("github"), myapp)
 
 gtoken <- config(token = github_token)
 
-req <- GET("https://api.github.com/rate_limit", gtoken)
+req <- GET("https://api.github.com/users/jtleek/repo", gtoken)
 stop_for_status(req)
 content(req)
 
-or
-
-req <- with_config(gtoken, GET("https://api.github.com/rate_limit")) 
-stop_for_status(req) 
-content(req)
 ```
+
+## 2. 
+```
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+
+f <- file.path(getwd(), "ss06pid.csv")
+
+download.file(url, f)
+
+acs <- data.table(read.csv(f))
+
+query1 <- sqldf("select pwgtp1 from acs where AGEP < 50")
+
+query2 <- sqldf("select pwgtp1 from acs")  ## NO
+
+query3 <- sqldf("select * from acs where AGEP < 50 and pwgtp1")  ## NO
+
+query4 <- sqldf("select * from acs where AGEP < 50")  ## NO
+
+identical(query3, query4)
+```
+> install.package(RH2)
+> install.package(data.table)
+> library(RH2)
+> library(data.table)
