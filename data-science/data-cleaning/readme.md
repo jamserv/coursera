@@ -51,3 +51,14 @@ identical(query3, query4)
 > library(data.table)
 
 **sqldf("select distinct AGEP from acs")**
+
+##4 How many characters are in the 10th, 20th, 30th and 100th lines of HTML from this page: 
+http://biostat.jhsph.edu/~jleek/contact.html
+(Hint: the nchar() function in R may be helpful) 
+
+```
+connection <- url("http://biostat.jhsph.edu/~jleek/contact.html")
+htmlCode <- readLines(connection)
+close(connection)
+c(nchar(htmlCode[10]), nchar(htmlCode[20]), nchar(htmlCode[30]), nchar(htmlCode[100]))
+```
