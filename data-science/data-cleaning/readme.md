@@ -21,6 +21,8 @@ req <- GET("https://api.github.com/users/jtleek/repo", gtoken)
 stop_for_status(req)
 content(req)
 
+**2013-11-07T13:25:07Z**
+
 ```
 
 ## 2. 
@@ -47,3 +49,5 @@ identical(query3, query4)
 > install.package(data.table)
 > library(RH2)
 > library(data.table)
+
+**sqldf("select distinct AGEP from acs")**
