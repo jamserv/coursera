@@ -62,3 +62,7 @@ htmlCode <- readLines(connection)
 close(connection)
 c(nchar(htmlCode[10]), nchar(htmlCode[20]), nchar(htmlCode[30]), nchar(htmlCode[100]))
 ```
+
+## Tips Lessons
+
+http://genomicsclass.github.io/book/pages/dplyr_tutorial.html
